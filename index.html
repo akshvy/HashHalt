@@ -49,3 +49,30 @@
     display:flex;align-items:center;gap:10px;
     margin-bottom:14px;
   }
+  .eyebrow::before{content:'';width:22px;height:1px;background:var(--teal);display:inline-block;}
+  :focus-visible{outline:2.5px solid var(--gold);outline-offset:3px;}
+
+   /* ---------- NAV ---------- */
+  header.site{
+    position:sticky;top:0;z-index:50;
+    background:rgba(245,246,241,.92);
+    backdrop-filter:blur(8px);
+    border-bottom:1px solid var(--line);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;padding:16px 0;}
+  .brand{display:flex;align-items:center;gap:10px;font-family:var(--serif);font-weight:600;font-size:21px;}
+  .brand .mark{width:30px;height:30px;flex:none;}
+  .navlinks{display:flex;align-items:center;gap:30px;font-size:14.5px;font-weight:500;}
+  .navlinks a{text-decoration:none;color:var(--ink-soft);transition:color .15s;}
+  .navlinks a:hover{color:var(--teal);}
+  .lang-switch{display:flex;gap:2px;background:var(--bg-alt);border-radius:20px;padding:3px;font-family:var(--mono);font-size:12px;}
+  .lang-switch button{
+    border:none;background:transparent;padding:6px 12px;border-radius:16px;cursor:pointer;
+    color:var(--ink-soft);font-family:var(--mono);font-size:12px;letter-spacing:.03em;
+  }
+  .lang-switch button.active{background:var(--ink);color:#fff;}
+  .nav-cta{
+    background:var(--ink);color:#fff;padding:10px 18px;border-radius:9px;
+    font-size:13.5px;font-weight:600;text-decoration:none;white-space:nowrap;
+  }
+  @media(max-width:880px){ .navlinks{display:none;} }
