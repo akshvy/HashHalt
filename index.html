@@ -193,3 +193,14 @@
     display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
     color:var(--gold);border:1px solid rgba(199,154,60,.4);padding:3px 9px;border-radius:20px;margin-bottom:14px;
   }
+/* ---------- MULTILINGUAL ---------- */
+  .lang-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:50px;align-items:center;}
+  @media(max-width:900px){.lang-grid{grid-template-columns:1fr;}}
+  .lang-card{
+    background:var(--card);border:1px solid var(--line);border-radius:16px;padding:32px;
+  }
+  .lang-preview-head{display:flex;justify-content:space-between;align-items:center;margin-bottom:18px;}
+  .lang-list{display:flex;flex-wrap:wrap;gap:8px;margin-top:20px;}
+  .lang-chip{font-family:var(--mono);font-size:12px;border:1px solid var(--line);border-radius:20px;padding:6px 12px;color:var(--ink-soft);}
+  #lang-preview-title{font-size:22px;margin-bottom:6px;}
+  #lang-preview-body{color:var(--ink-soft);font-size:14.5px;}
